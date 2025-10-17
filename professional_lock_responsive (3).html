@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Professional Lock — Установка замков любой сложности в Алматы</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#6c5ce7;--muted:#9aa3b2}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Poppins',sans-serif;color:#e6eef1;background:#07080b;line-height:1.6;overflow-x:hidden;animation:fadeIn .6s ease both}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.header{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;background:linear-gradient(180deg,#0c0d13,#08090c);position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(255,255,255,0.04);backdrop-filter:blur(6px)}
+.brand{display:flex;flex-direction:column;line-height:1}
+.brand .title{font-weight:700;color:#fff;font-size:20px}
+.brand .year{color:var(--muted);font-size:12px;margin-top:2px}
+.header-right{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn{padding:10px 14px;border-radius:999px;font-weight:600;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,0.06);font-size:13px;display:inline-flex;align-items:center;gap:8px}
+.btn-wa{background:linear-gradient(180deg,#22c55e,#16a34a)}
+.btn-ig{background:linear-gradient(135deg,#f58529,#dd2a7b)}
+.btn-yt{background:linear-gradient(180deg,#e53935,#c62828)}
+.hero{position:relative;height:70vh;min-height:420px;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:0 20px}
+.hero-svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.22),rgba(0,0,0,0.62));z-index:2}
+.hero-svg svg{width:100%;height:100%;object-fit:cover;transform-origin:center center;animation:breath 10s ease-in-out infinite}
+@keyframes breath{0%{transform:scale(1)}50%{transform:scale(1.035)}100%{transform:scale(1)}}
+.hero-content{position:relative;z-index:3;color:#fff;max-width:1100px;padding:20px}
+.hero h1{font-size:clamp(20px,5vw,36px);line-height:1.1;margin-bottom:8px;text-shadow:0 8px 30px rgba(0,0,0,0.6)}
+.hero p{color:var(--muted);font-size:clamp(14px,3vw,16px)}
+.container{max-width:1100px;margin:40px auto;padding:0 20px}
+.section{margin:44px 0}
+.section h3{color:var(--accent);margin-bottom:18px;text-transform:uppercase;font-size:15px;font-weight:700}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.04);border-radius:12px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,0.5);text-align:center;transition:transform .4s ease,opacity .6s ease;opacity:0;transform:translateY(40px)}
+.card.visible{opacity:1;transform:translateY(0)}
+.card:hover{transform:translateY(-6px)}
+.card h4{color:#fff;margin-bottom:8px}
+.card p{color:var(--muted);font-size:14px}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:6px}
+.review{background:rgba(255,255,255,0.03);padding:16px;border-radius:12px;text-align:left;transition:opacity .6s ease,transform .6s ease;opacity:0;transform:translateY(40px)}
+.review.visible{opacity:1;transform:translateY(0)}
+.stars{color:var(--accent);font-weight:700;margin-bottom:8px}
+.review p{color:var(--muted);font-size:14px;margin-bottom:8px}
+.review .author{font-weight:600;color:#fff;font-size:13px}
+footer{background:linear-gradient(180deg,#0c0d13,#07080b);padding:36px 20px;text-align:center;border-top:1px solid rgba(255,255,255,0.04);margin-top:36px}
+.contact-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+.contact-pill{padding:10px 16px;border-radius:999px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.04);font-weight:600}
+.to-top{position:fixed;right:20px;bottom:22px;background:var(--accent);color:#fff;border:none;padding:10px 12px;border-radius:999px;display:none;cursor:pointer}
+
+@media (max-width: 600px) {
+  .header {flex-direction: column;gap: 10px;padding: 10px 16px;}
+  .header-right {flex-wrap: wrap;justify-content: center;}
+  .btn {font-size: 12px;padding: 8px 12px;}
+  .hero {height: 50vh;min-height: 320px;padding: 0 10px;}
+  .hero h1 {font-size: 22px;}
+  .hero p {font-size: 14px;}
+  .services, .reviews {grid-template-columns: 1fr;}
+  .card, .review {padding: 14px;}
+  footer {padding: 24px 10px;}
+  .contact-row {flex-direction: column;align-items: center;}
+  .contact-pill {width: 100%;text-align: center;}
+}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="brand"><div class="title">Professional Lock</div><div class="year">2025 • Алматы</div></div>
+  <div class="header-right">
+    <a class="btn" href="tel:+77711440730">+7 706 447 9427</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/professionallock" target="_blank">Instagram</a>
+    <a class="btn btn-yt" href="https://youtube.com/@professionallock" target="_blank">YouTube</a>
+    <a class="btn btn-wa" href="https://wa.me/77064479427" target="_blank">WhatsApp</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="wood1" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0" stop-color="#6b3f1a"/>
+          <stop offset="0.5" stop-color="#7f4d22"/>
+          <stop offset="1" stop-color="#5b3412"/>
+        </linearGradient>
+        <linearGradient id="metal" x1="0" x2="1">
+          <stop offset="0" stop-color="#d1d1d1"/>
+          <stop offset="1" stop-color="#7b7b7b"/>
+        </linearGradient>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#wood1)" />
+      <g opacity="0.12">
+        <rect x="140" y="40" width="28" height="820" fill="#000"/>
+        <rect x="360" y="40" width="28" height="820" fill="#000"/>
+        <rect x="580" y="40" width="28" height="820" fill="#000"/>
+        <rect x="800" y="40" width="28" height="820" fill="#000"/>
+        <rect x="1020" y="40" width="28" height="820" fill="#000"/>
+        <rect x="1240" y="40" width="28" height="820" fill="#000"/>
+      </g>
+      <rect x="60" y="60" width="1480" height="780" rx="16" fill="none" stroke="#ffffff" stroke-opacity="0.03"/>
+      <g transform="translate(1100,400)">
+        <rect x="-60" y="-100" width="120" height="200" rx="16" fill="url(#metal)" stroke="#4a4a4a" stroke-width="3" />
+        <circle cx="0" cy="-20" r="22" fill="#2c2c2c" />
+        <rect x="-12" y="-10" width="24" height="40" rx="8" fill="#1a1a1a" />
+        <circle cx="0" cy="60" r="10" fill="#e6c36a" />
+        <rect x="-35" y="70" width="70" height="10" rx="5" fill="#c8a54b" />
+        <path d="M-40 -90 q40 -20 80 0" stroke="#fff" stroke-opacity="0.15" stroke-width="4" fill="none" />
+      </g>
+    </svg>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Установка замков любой сложности в Алматы</h1>
+    <p>Настройка и ремонт замков любой сложности — быстро, аккуратно, с гарантией.</p>
+  </div>
+</section>
+
+<main class="container">
+  <section class="section" id="services">
+    <h3>Наши услуги</h3>
+    <div class="services">
+      <div class="card"><h4>Врезка замков</h4><p>Профессиональная установка механических и электронных замков любой сложности.</p></div>
+      <div class="card"><h4>Установка</h4><p>Точная установка дверных систем с контролем качества и долговечности.</p></div>
+      <div class="card"><h4>Замена</h4><p>Быстрая замена любых замков с сохранением эстетики двери.</p></div>
+      <div class="card"><h4>Настройка</h4><p>Программирование и адаптация электронных систем безопасности.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="why">
+    <h3>Почему выбирают нас</h3>
+    <div class="services">
+      <div class="card"><h4>Профессионализм</h4><p>Опыт более 10 лет. Все мастера сертифицированы и используют премиальные инструменты.</p></div>
+      <div class="card"><h4>Чистая работа</h4><p>После установки — никакой пыли и следов вмешательства.</p></div>
+      <div class="card"><h4>Гарантия</h4><p>Официальная гарантия на все виды услуг и установленные устройства.</p></div>
+      <div class="card"><h4>Скорость</h4><p>Выезд мастера в течение 30 минут по городу Алматы. Работаем 24/7.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <h3>Отзывы клиентов</h3>
+    <div class="reviews">
+      <div class="review"><div class="stars">★★★★★</div><p>Отличная установка, всё работает идеально. Мастер приехал вовремя и сделал быстро.</p><div class="author">— Александр К.</div></div>
+      <div class="review"><div class="stars">★★★★★</div><p>Поменяли замок аккуратно, без повреждений. Рекомендую.</p><div class="author">— Марина П.</div></div>
+      <div class="review"><div class="stars">★★★★★</div><p>Настроили электронный замок и показали все функции. Очень довольны.</p><div class="author">— Тимур С.</div></div>
+      <div class="review"><div class="stars">★★★★★</div><p>Быстрый выезд и качественная работа. Спасибо!</p><div class="author">— Айжан Т.</div></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <h3>Контакты</h3>
+  <div class="contact-row">
+    <a class="btn btn-ig" href="https://www.instagram.com/professionallock" target="_blank">Instagram</a>
+    <a class="btn btn-yt" href="https://youtube.com/@professionallock" target="_blank">YouTube</a>
+    <a class="btn btn-wa" href="https://wa.me/77064479427" target="_blank">WhatsApp</a>
+  </div>
+  <div class="contact-row" style="margin-top:14px;">
+    <div class="contact-pill">г. Алматы</div>
+    <div class="contact-pill">+7 706 447 9427</div>
+  </div>
+  <p style="color:var(--muted);margin-top:16px">© 2025 Professional Lock. Все права защищены.</p>
+</footer>
+
+<button class="to-top" id="toTop">↑</button>
+
+<script>
+const toTop = document.getElementById('toTop');
+window.addEventListener('scroll', ()=> { toTop.style.display = window.scrollY > 300 ? 'block' : 'none'; });
+toTop.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+
+const observer = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); } }); }, {threshold: 0.2});
+document.querySelectorAll('.card, .review').forEach(el=> observer.observe(el));
+</script>
+</body>
+</html>
